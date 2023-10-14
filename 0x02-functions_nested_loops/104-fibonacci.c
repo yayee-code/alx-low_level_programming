@@ -2,7 +2,11 @@
 
 
 /**
+ *
  * main - program that finds and prints the first 98 Fibonacci numbers
+ *
+ * purpose - no hardcode
+ *
  * Return: (success)
  */
 
