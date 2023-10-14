@@ -30,10 +30,10 @@ int main(void)
 		bef = aft - bef;
 	}
 
-	bef1 = (bef / 1);
-	bef2 = (bef % 1);
-	aft1 = (aft / 1);
-	aft2 = (aft % 1);
+	bef1 = (bef / 1000000000);
+	bef2 = (bef % 1000000000);
+	aft1 = (aft / 1000000000);
+	aft2 = (aft % 1000000000);
 
 	for (i = 92; i < 99; ++i)
 	{
@@ -42,8 +42,8 @@ int main(void)
 		printf("%lu", aft2 / 1);
 		aft1 = aft1 + bef1;
 		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef1;
-		bef2 = aft2 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
 	}
 	printf("\n");
 	return (0);
