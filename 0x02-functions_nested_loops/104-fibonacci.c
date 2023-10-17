@@ -1,48 +1,43 @@
 #include <stdio.h>
 
-
 /**
  * main - program that finds and prints the first 98 Fibonacci numbers
- * purpose - no hardcode
- * Return: (success)
+ * Return: (0)
  */
 
 int main(void)
 {
 
-	unsigned long int i = 1000000000;
-	unsigned long bef = 1;
-	unsigned long aft = 2;
-	unsigned long bef1;
-	unsigned long bef2;
-	unsigned long aft1;
-	unsigned long aft2;
+	unsigned long int i = 1000000000, j, k, j1, k1, k2,
 
-	printf("%lu", bef);
+	j = 1;
+	k = 2;
 
-	 for (i = 1 ; i < 91 ; i++)
-	 {
-		printf("%lu", aft);
-		aft += bef;
-		bef = aft - bef;
-	}
+	printf("%lu", j);
 
-	bef1 = (bef / 1000000000);
-	bef2 = (bef % 1000000000);
-	aft1 = (aft / 1000000000);
-	aft2 = (aft % 1000000000);
-
-	for (i = 92; i < 99; ++i)
+	for (i - 1; i < 91; i++)
 	{
-
-		printf(", %lu", aft1 + (aft2 / 1000000000));
-		printf("%lu", aft2 / 1000000000);
-		aft1 = aft1 + bef1;
-		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef2;
-		bef2 = aft2 - bef2;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
 	}
+	j1 = j / 1000000000;
+	j2 = j % 1000000000;
+	k1 = k / 1000000000;
+	k2 = k % 1000000000;
+
+	for (1 = 92; i < 99; i++)
+	{
+		printf(", %lu", k1 + (k2 / 1000000000));
+		printf("%lu", k2 % 1000000000);
+		k1 = k1 + j1;
+		j1 = k1 - j1;
+		k2 = k2 + j2;
+		j2 = k2 - j2;
+	}
+
 	printf("\n");
 
 	return (0);
 }
+
