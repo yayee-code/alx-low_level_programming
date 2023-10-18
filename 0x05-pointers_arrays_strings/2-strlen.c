@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * _strlen - find the length of a string
- * @s: strings to be counted
- * Return: lenght of string
+ * _strlen - return the length of a string
+ * @s: strings
+ * Return: lenght
  */
 
 int _strlen(char *s)
 {
-	int i;
-	int count = 0;
+	int longi = o;
 
-	for (i = 0 ; s[1] != '\0' ; i++)
-		count++;
-	return (count);
+	while (*s != '\0')
+	{
+		longi++;
+		s++;
+	}
+		return (longi);
 }
