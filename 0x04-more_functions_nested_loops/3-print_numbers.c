@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * prinit_numbers - prinit numbers
- * Return: void
+ * print_numbers - print 0-9
+ * return: void
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	int i:
-	for (i = 0; i < 10; i++)
-	_putchar(i + '0');
+	char c;
 
-	_putchar("\n");
-}
-
+	for (c = '0'; c <= '9'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
 

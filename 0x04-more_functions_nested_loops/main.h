@@ -1,6 +1,8 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
 
+#include <unistd.h>
+
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
@@ -12,5 +14,7 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
+
+_putchar.c
 
 #endif
