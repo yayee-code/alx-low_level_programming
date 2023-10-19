@@ -1,6 +1,7 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
 
+#include <stdio.h>
 #include <unistd.h>
 
 int _isupper(int c);
@@ -14,7 +15,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
-
-_putchar.c
 
 #endif
