@@ -39,7 +39,7 @@ int check_num(char *str)
 	 *  * Return: Always 0 (Success)
 	 */
 
-	int main(int argc, char *argv[]);
+	int main(int argc, char *argv[])
 
 {
 		/*Declaring variables*/
@@ -69,4 +69,4 @@ int check_num(char *str)
 
 		printf("%d\n", sum); /*print sum*/
 		return (0);
-	}
+}
