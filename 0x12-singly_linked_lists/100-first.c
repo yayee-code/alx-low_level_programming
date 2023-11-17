@@ -5,7 +5,7 @@
 * is executed before main()
 */
 
-void myStartupFun(void) __attribute__((constructor));
+void myStartupFun(void);
 
 /**
 * myStartupFun - implementation of myStartupFun
